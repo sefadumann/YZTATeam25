@@ -217,3 +217,115 @@ PharmAI, hastaların ve sağlık profesyonellerinin kullandığı ilaçlar aras�
 ## 📜 Lisans & Etik  
 Kullanılan tüm veri setleri kamuya açık kaynaklardan alınmıştır.  
 Sistem tanı koymaz, sadece bilgilendirici analiz sunar.
+
+<details>
+  <summary><h1> 📂 Sprint 2 </h1></summary>
+
+
+> **Sprint Tarihleri:** 7 Temmuz 2025 – 20 Temmuz 2025  
+> **Toplam Puan:** 100
+
+## Task Tracking
+
+
+# Sprint 1 Burndown Chart
+
+
+# Sprint 1 Raporu
+
+## Hedef
+
+Bu sprintte temel hedef, ön yüz geliştirmesini tamamlayarak ilaç verilerinin API ile dinamik şekilde alınmasını sağlamak ve chatbot modülünü entegre etmektir. Ayrıca kullanıcı arayüzü ve chatbot akışlarına ait temel işlevler bitirilerek MVP'nin işlevsel hâle getirilmesi amaçlanmaktadır.
+
+## 1. Sprint Notları
+
+Her günkü Daily Scrum’dan kısa notlar (kim ne yaptı, ne engel var, ne planlandı)
+
+| Tarih      | Kim         | Yapılan                                                                                    | Plan (Bugün)                                         | Bloklayıcılar                                               |
+| ---------- | ----------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------------------- |
+| 16.07.2025 | Emre (DEV)  | - Frontend tamamlandı<br>- GitHub reposu açıldı<br>- Site iskeleti geliştirildi            | - API ile veri bağlantısı kurulacak                  | API veri formatı henüz net değil                            |
+| 16.07.2025 | Hatice (AI) | - 50 ilacın verisi hazırlandı (isim, yan etki, prospektüs)<br>- API erişimleri test edildi | - JSON formatında veri çıktılarını hazırlayacak      | DrugBank erişimi kısıtlı<br>Prospektüs API erişim sorunu    |
+| 16.07.2025 | Ayşe (DEV)  | - Metin içerikleri hazırlamaya destek oldu                                                 | - Sprint 2 README düzenlemesi için içerik paylaşacak | Bilgi eksiklikleri                                          |
+| 17.07.2025 | Emre (DEV)  | - Kullanıcı ilaç ismi girişi ile etken madde eşleşmesi test edildi                         | - Front ile backend bağlanacak                       | Etken madde eşleşme sorunu<br>API çıktısı standardize değil |
+| 17.07.2025 | Hatice (AI) | - Chatbot akışına dair denemeler yapıldı                                                   | - Semptom öneri sistemi için promptlar oluşturulacak | Chatbot modülü entegrasyonu eksik                           |
+
+---
+
+## 2. Tahmin Edilen Tamamlanacak Puan & Tahmin Mantığı
+
+🏷️ **Toplam Hedef: 100 Story Point**
+
+| User Story No | Açıklama                                            | Puan |
+|---------------|-----------------------------------------------------|-----:|
+| 6             | Frontend iskeletinin tamamlanması                   |   20 |
+| 7             | İlaç verisinin toplanması ve API uygunluğunun sağlanması  |   25 |
+| 8             | API entegrasyonu ile dinamik veri sorgusu                     |   25 |
+| 9             | Chatbot temel akışı ve öneri sisteminin prototiplenmesi                      |   20 |
+| 10            | Sprint değerlendirmesi, ekran görüntüleri, dökümantasyon                 |   10 |
+| **Toplam**    |                                                     | **100** |
+
+### Tahmin Mantığı
+
+1. **Story Point Dağılımı**  
+   – Her bir user story, karmaşıklığına ve iş yükünü göz önüne alarak 10-25 puan aralığında değerlendirildi.  
+2. **Ekip Kapasitesi**  
+   – Birinci sprintte toplam 100 puan başarıyla tamamlandı. Aynı tempo ve katkının süreceği varsayılarak 100 puan sabit tutuldu.  
+3. **Risk & Buffer**  
+   – API kaynaklarındaki erişim problemleri, chatbot düzeyi gibi teknik engeller için ayrıca %10’luk buffer hesaplaması dikkate alındı.  
+4. **Sonuç**  
+   – 100 puanlık hedef bu sprint için de yeterli, dengeli ve uygulanabilir bulunmuştur. 
+
+
+# Sprint Daily Scrum 
+
+## Daily Scrum – 26.06.2025
+
+*Time:* 09:30  
+*Attendees:*  
+- Beyzanur (PO)  
+- Emre Dumbo (DEV)  
+- Hatice (AI/Backend)
+- Ayşe (DEV)
+
+---
+
+### Önceki Gün 
+- **Emre (DEV):** Frontend geliştirmesini tamamladı, GitHub repo yayına alındı.  
+- **Hatice (AI):** 50 ilaç verisi derlendi (isim, yan etki, prospektüs), API testleri yapıldı.  
+- **Ayşe (DEV):** README ve metin içerikleri konusunda destek verdi.  
+
+### 2. Bugün
+- **Emre (DEV):** Frontend ile backend arası entegrasyonu başlatacak.  
+- **Hatice (AI):** JSON veri formatlarını çıktıya hazırlayacak.  
+- **Ayşe (DEV):** README dosyasının çıktılarını tamamlayacak. 
+
+### 3. Blockers  
+- API çıktısı standart değil.  
+- Prospektüs verilerine API ile erişim sınırlı.  
+- Etken madde ile ticari ad eşleşmesi sıkıntılı.  
+
+
+## ✅ Sprint Retrospective
+
+### İyi Gidenler:
+- Frontend prototip tamamlandı.
+- Ekip içi koordinasyon güçlendi.
+- Veri tarafı ilerletildi.
+### Geliştirilecek Alanlar:
+- API çıktılarının formatı netleştirilmeli.
+- Chatbot testleri tamamlanmalı.
+- Kullanıcı geri bildirimleri için test akışı kurulmalı.
+### Aksiyonlar:
+- Prompt çıktıları örneklenip standartlaştırılacak.
+- Etken madde ile ticari ad eşleşmeleri iyileştirilecek.
+- Veri setleri belgelenecek ve repo içine yerleştirilecek.
+
+## 📌 Notlar
+
+- Bu ürün MVP niteliğindedir (Minimum Viable Product).  
+- Nihai hedef: kullanıcıya hızlı, açık ve doğru uyarılar sunan basit bir karar destek aracı geliştirmek.
+
+
+## 📜 Lisans & Etik  
+Kullanılan tüm veri setleri kamuya açık kaynaklardan alınmıştır.  
+Sistem tanı koymaz, sadece bilgilendirici analiz sunar.
